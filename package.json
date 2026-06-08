@@ -1,5 +1,5 @@
 {
-  "name": "social_democracy_alternate_history",
+  "name": "galactic_republic_alternate_history",
   "version": "0.11.1",
   "description": "Building the game:",
   "main": "out/html/index.html",
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/originn0/dynamic_social_democracy.git"
+    "url": "git+https://aucchen@github.com/aucchen/galactic_republic_alternate_history.git"
   },
   "keywords": [],
   "author": "Autumn Chen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/originn0/dynamic_social_democracy/issues"
+    "url": "https://github.com/aucchen/galactic_republic_alternate_history/issues"
   },
-  "homepage": "https://github.com/originn0/dynamic_social_democracy",
+  "homepage": "https://github.com/aucchen/galactic_republic_alternate_history",
   "dependencies": {
-    "dendrynexus": "github:originn0/dendrynexus",
+    "dendrynexus": "^0.0.1",
     "parliament-svg": "^3.0.0"
   }
 }
