@@ -2,29 +2,20 @@ title: Root Scene
 new-page: true
 go-to: post_event if started = 1; start_menu if started = 0
 
+# TODO: do that thing that we did before...
+
 @start_menu
 new-page: true
 go-to: start_menu_2
 
-= Social Democracy: An Alternate History
+= Galactic Republic: An Alternate History
 
 @start_menu_2
 
-- @start_1: Start game
-- @modinfo: Mod Info - Last Updated 2026/05/24
+- @start: Start game
+- @election_simulation: Election simulation
 - @credits: Credits
 - @game_over.achievements
-
-@start_1
-on-arrival: player_beg = 1 if not achievement_game_completed
-go-to: start if achievement_game_completed; pls_player if not achievement_game_completed
-
-
-@pls_player
-
-Read.
-
-- @modinfo.infotext: Mod Info - Last Updated 2026/01/25
 
 
 @start
@@ -32,28 +23,36 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1928;
+Q.year = 7945;
 Q.month = 1;
-Q.week = 0;
-Q.week_checked = 0;
 // how many actions have been taken this month?
 Q.month_actions = 0;
 
+Q.chancellor = "Finis Valorum";
+Q.chancellor_party = "I";
+
+Q.core_r = 35;
+Q.rim_r = 20;
+Q.pacifist_r = 10;
+Q.militarist_r = 5;
+Q.loyalist_r = 5;
+Q.unaligned_r = 25;
+
+Q.core_relation = 10;
+Q.rim_relation = 10;
+Q.pacifist_relation = 10;
+Q.militarist_relation = 5;
+Q.loyalist_relation = 60;
+
 // 0 = normal difficulty, 1 = hard mode, 2 = hard mode no saves
 Q.difficulty = 0;
-Q.historical_mode = 0;
 // old demographics
-Q.dynamic_mode = 0;
-
 Q.old_demographics = 0;
-// use decimals for reichstag seats
-// TODO: not yet implemented
-Q.use_decimals = 0;
 
 // party resources
 Q.resources = 2;
 // party dues
-Q.dues = 5;
+Q.dues = 2;
 
 // the state of the party
 // overall dissent reduces every increase in party support.
